@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  width: auto;
+  height: auto;
 }
 
 body {
@@ -21,3 +23,63 @@ h6 {
 p {
   margin: 0;
 }
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  align-content: end;
+  margin: 0px 5%;
+}
+
+.hero-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-color: lightblue;
+  width: fit-content;
+}
+
+.hero-banner-test {
+  height: 250px;
+  width: fit-content;
+  background-image: url('../images/02-portfolio-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  justify-content: space-evenly;
+}
+
+.about-me, .work, .contact-me {
+display: inline;
+flex-direction: row;
+justify-content: flex-start;
+}
+
+.box-1 {
+  height: max-content;
+  width: max-content;
+  display: inline-block;
+  flex-direction: row;
+  background-image: url(..\images\02-portfolio-1.jpg);
+}
+
+
+Keep this at the bottom. Check this against the console screen sizes, 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+main {font-size: 6px;}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
